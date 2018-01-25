@@ -31,6 +31,7 @@
     <object>objects\obj_generator</object>
     <object>objects\obj_UI</object>
     <object>objects\obj_room_controller</object>
+    <object>objects\obj_respawn_controller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_test</room>
