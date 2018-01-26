@@ -12,6 +12,8 @@
     <sprite>sprites\spr_better_orb</sprite>
     <sprite>sprites\spr_best_orb</sprite>
     <sprite>sprites\spr_spr_bad_orb</sprite>
+    <sprite>sprites\spr_Play_Button</sprite>
+    <sprite>sprites\spr_Quit_Button</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -32,8 +34,11 @@
     <object>objects\obj_UI</object>
     <object>objects\obj_room_controller</object>
     <object>objects\obj_respawn_controller</object>
+    <object>objects\obj_Play_Button</object>
+    <object>objects\obj_Quit_Button</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room_menu</room>
     <room>rooms\room_test</room>
   </rooms>
   <help>
