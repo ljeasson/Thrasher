@@ -14,6 +14,10 @@
     <sprite>sprites\spr_spr_bad_orb</sprite>
     <sprite>sprites\spr_Play_Button</sprite>
     <sprite>sprites\spr_Quit_Button</sprite>
+    <sprite>sprites\spr_Title</sprite>
+    <sprite>sprites\spr_volume</sprite>
+    <sprite>sprites\spr_settings</sprite>
+    <sprite>sprites\spr_back</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -36,6 +40,10 @@
     <object>objects\obj_respawn_controller</object>
     <object>objects\obj_Play_Button</object>
     <object>objects\obj_Quit_Button</object>
+    <object>objects\obj_Title</object>
+    <object>objects\obj_volume</object>
+    <object>objects\obj_settings</object>
+    <object>objects\obj_back</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
