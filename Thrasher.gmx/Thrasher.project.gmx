@@ -11,7 +11,7 @@
     <sprite>sprites\spr_good_orb</sprite>
     <sprite>sprites\spr_better_orb</sprite>
     <sprite>sprites\spr_best_orb</sprite>
-    <sprite>sprites\spr_spr_bad_orb</sprite>
+    <sprite>sprites\spr_time_orb</sprite>
     <sprite>sprites\spr_Play_Button</sprite>
     <sprite>sprites\spr_Quit_Button</sprite>
     <sprite>sprites\spr_Title</sprite>
@@ -25,6 +25,11 @@
     <sprite>sprites\spr_SOUND</sprite>
     <sprite>sprites\spr_WASD</sprite>
     <sprite>sprites\spr_MOUSE</sprite>
+    <sprite>sprites\spr_COLLECT_ORBS</sprite>
+    <sprite>sprites\spr_SLOW_DOWN_TIME</sprite>
+    <sprite>sprites\spr_DON_T_HIT_WALLS</sprite>
+    <sprite>sprites\spr_SPEED</sprite>
+    <sprite>sprites\spr_ORBS</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -56,6 +61,7 @@
     <object>objects\obj_Switch</object>
     <object>objects\obj_WASD</object>
     <object>objects\obj_MOUSE</object>
+    <object>objects\obj_tutorial</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
