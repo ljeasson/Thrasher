@@ -15,9 +15,16 @@
     <sprite>sprites\spr_Play_Button</sprite>
     <sprite>sprites\spr_Quit_Button</sprite>
     <sprite>sprites\spr_Title</sprite>
-    <sprite>sprites\spr_volume</sprite>
+    <sprite>sprites\spr_volume_on</sprite>
+    <sprite>sprites\spr_volume_off</sprite>
     <sprite>sprites\spr_settings</sprite>
     <sprite>sprites\spr_back</sprite>
+    <sprite>sprites\spr_switch_on</sprite>
+    <sprite>sprites\spr_switch_off</sprite>
+    <sprite>sprites\spr_MUSIC</sprite>
+    <sprite>sprites\spr_SOUND</sprite>
+    <sprite>sprites\spr_WASD</sprite>
+    <sprite>sprites\spr_MOUSE</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -44,9 +51,15 @@
     <object>objects\obj_volume</object>
     <object>objects\obj_settings</object>
     <object>objects\obj_back</object>
+    <object>objects\obj_MUSIC</object>
+    <object>objects\obj_SOUND</object>
+    <object>objects\obj_Switch</object>
+    <object>objects\obj_WASD</object>
+    <object>objects\obj_MOUSE</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
+    <room>rooms\room_settings</room>
     <room>rooms\room_test</room>
   </rooms>
   <help>
