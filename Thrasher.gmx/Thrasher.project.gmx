@@ -4,7 +4,12 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_menu</sound>
+    <sound>sound\snd_gameplay</sound>
+    <sound>sound\snd_gameplay_2</sound>
+    <sound>sound\snd_fx_record_scratch</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_player</sprite>
@@ -26,7 +31,7 @@
     <sprite>sprites\spr_WASD</sprite>
     <sprite>sprites\spr_MOUSE</sprite>
     <sprite>sprites\spr_COLLECT_ORBS</sprite>
-    <sprite>sprites\spr_SLOW_DOWN_TIME</sprite>
+    <sprite>sprites\spr_SLOW_DOWN_SPEED</sprite>
     <sprite>sprites\spr_DON_T_HIT_WALLS</sprite>
     <sprite>sprites\spr_SPEED</sprite>
     <sprite>sprites\spr_ORBS</sprite>
@@ -62,6 +67,8 @@
     <object>objects\obj_WASD</object>
     <object>objects\obj_MOUSE</object>
     <object>objects\obj_tutorial</object>
+    <object>objects\obj_music_controller_menu</object>
+    <object>objects\obj_music_controller_gameplay</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>

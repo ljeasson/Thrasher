@@ -11,6 +11,30 @@
     <event eventtype="6" enumb="53">
       <action>
         <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.shown_tutorial</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>203</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -43,27 +67,32 @@
             <kind>1</kind>
             <string>///Draw Tutorial Screen
 
-//Draw Background
-draw_rectangle_colour(0,0,room_width,room_height,c_gray,c_dkgray,c_dkgray,c_ltgray,false);
-draw_set_alpha(0.9);
+if (!global.shown_tutorial) {
 
-//COLLECT ORBS section (Words and 3 orbs)
-draw_sprite(spr_COLLECT_ORBS,1,room_width/2,room_height/2-150);
-draw_sprite(spr_good_orb,-1,room_width/2-64,room_height/2-90);
-draw_sprite(spr_better_orb,-1,room_width/2,room_height/2-90);
-draw_sprite(spr_best_orb,-1,room_width/2+64,room_height/2-90);
+    //Draw Background
+    draw_rectangle_colour(0,0,room_width,room_height,c_gray,c_dkgray,c_dkgray,c_ltgray,false);
+    draw_set_alpha(0.9);
+    
+    //COLLECT ORBS section (Words and 3 orbs)
+    draw_sprite(spr_COLLECT_ORBS,1,room_width/2,room_height/2-150);
+    draw_sprite(spr_good_orb,-1,room_width/2-64,room_height/2-90);
+    draw_sprite(spr_better_orb,-1,room_width/2,room_height/2-90);
+    draw_sprite(spr_best_orb,-1,room_width/2+64,room_height/2-90);
 
-//SLOW DOWN TIME section (Words and Time Orb)
-draw_sprite(spr_SLOW_DOWN_TIME,1,room_width/2,room_height/2);
-draw_sprite(spr_time_orb,-1,room_width/2,room_height/2+60);
+    //SLOW DOWN TIME section (Words and Time Orb)
+    draw_sprite(spr_SLOW_DOWN_SPEED,1,room_width/2,room_height/2);
+    draw_sprite(spr_time_orb,-1,room_width/2,room_height/2+60);
 
-//DONT HIT WALLS section (Words only)
-draw_sprite(spr_DON_T_HIT_WALLS,1,room_width/2,room_height/2+150);
+    //DONT HIT WALLS section (Words only)
+    draw_sprite(spr_DON_T_HIT_WALLS,1,room_width/2,room_height/2+150);
 
-//SPEED and ORBS section (Words only)
-draw_sprite(spr_SPEED,1,0,room_height-80);
-draw_sprite(spr_ORBS,1,room_width-192,room_height-80);
-
+    //SPEED and ORBS section (Words only)
+    draw_sprite(spr_SPEED,1,0,room_height-80);
+    draw_sprite(spr_ORBS,1,room_width-192,room_height-80);
+}
+else {
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>

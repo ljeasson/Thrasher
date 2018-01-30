@@ -269,6 +269,7 @@
     <instance objName="obj_Title" x="512" y="128" name="inst_E1FD8522" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_volume" x="864" y="432" name="inst_8B275C36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_settings" x="944" y="432" name="inst_1F5699A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_music_controller_menu" x="32" y="-16" name="inst_2E29A04B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

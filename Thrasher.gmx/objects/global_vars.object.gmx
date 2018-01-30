@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>global.movement_speed = 0;
 global.orb_count = 0;
+
+global.shown_tutorial = false;
 </string>
           </argument>
         </arguments>
