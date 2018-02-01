@@ -18,18 +18,30 @@
     <sprite>sprites\spr_best_orb</sprite>
     <sprite>sprites\spr_time_orb</sprite>
     <sprite>sprites\spr_Play_Button</sprite>
+    <sprite>sprites\spr_Play_Button_hover</sprite>
     <sprite>sprites\spr_Quit_Button</sprite>
+    <sprite>sprites\spr_Quit_Button_hover</sprite>
     <sprite>sprites\spr_Title</sprite>
     <sprite>sprites\spr_volume_on</sprite>
+    <sprite>sprites\spr_volume_on_hover</sprite>
     <sprite>sprites\spr_volume_off</sprite>
+    <sprite>sprites\spr_volume_off_hover</sprite>
     <sprite>sprites\spr_settings</sprite>
+    <sprite>sprites\spr_settings_hover</sprite>
+    <sprite>sprites\spr_score_table</sprite>
+    <sprite>sprites\spr_score_table_hover</sprite>
     <sprite>sprites\spr_back</sprite>
+    <sprite>sprites\spr_back_hover</sprite>
     <sprite>sprites\spr_switch_on</sprite>
+    <sprite>sprites\spr_switch_on_hover</sprite>
     <sprite>sprites\spr_switch_off</sprite>
+    <sprite>sprites\spr_switch_off_hover</sprite>
     <sprite>sprites\spr_MUSIC</sprite>
     <sprite>sprites\spr_SOUND</sprite>
     <sprite>sprites\spr_WASD</sprite>
+    <sprite>sprites\spr_WASD_hover</sprite>
     <sprite>sprites\spr_MOUSE</sprite>
+    <sprite>sprites\spr_MOUSE_hover</sprite>
     <sprite>sprites\spr_COLLECT_ORBS</sprite>
     <sprite>sprites\spr_SLOW_DOWN_SPEED</sprite>
     <sprite>sprites\spr_DON_T_HIT_WALLS</sprite>
@@ -60,6 +72,7 @@
     <object>objects\obj_Title</object>
     <object>objects\obj_volume</object>
     <object>objects\obj_settings</object>
+    <object>objects\obj_score_table</object>
     <object>objects\obj_back</object>
     <object>objects\obj_MUSIC</object>
     <object>objects\obj_SOUND</object>
@@ -69,10 +82,13 @@
     <object>objects\obj_tutorial</object>
     <object>objects\obj_music_controller_menu</object>
     <object>objects\obj_music_controller_gameplay</object>
+    <object>objects\obj_high_score_table</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room_global_vars</room>
     <room>rooms\room_menu</room>
     <room>rooms\room_settings</room>
+    <room>rooms\room_high_score</room>
     <room>rooms\room_test</room>
   </rooms>
   <help>

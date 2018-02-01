@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,31 +25,24 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Initialize global variables
+            <string>///Draw High Score Table
 
-//Important gameplay stats
-global.movement_speed = 0;
-global.orb_count = 0;
+//Draw Background
+draw_rectangle_colour(128,48,room_width-128,room_height-48,c_gray,c_dkgray,c_dkgray,c_ltgray,false);
 
-//Shown tutorial indicator (flag)
-global.shown_tutorial = false;
+//Draw Name
+draw_set_color(c_white);
+draw_set_font(UI_font);
+draw_text(128,8,"Name: " + global.name);
 
-//Music on indicator (toggle)
-global.music_on = true;
-
-//Name and Score information
-global.name = "Leeasson";
-global.scores[] = 10;
+//Draw Score
 for (i = 0; i &lt; array_length_1d(global.scores); i++)
 {
-    global.scores[i] = 0;
+    draw_set_color(c_black);
+    draw_set_font(UI_font);
+    draw_text(196,i*32,global.scores[i]);
+    
 }
-
-//Control Scheme
-global.WASD = true;
-global.mouse = false;
-
-room_goto_next();
 </string>
           </argument>
         </arguments>
